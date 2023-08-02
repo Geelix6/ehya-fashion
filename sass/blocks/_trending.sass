@@ -1,0 +1,74 @@
+.trending
+  padding-top: 145px
+  &__menu
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 48px
+  &__title
+    margin: 0
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+  &__link
+    margin-right: 38px
+    font-size: 18px
+    line-height: 25px
+    color: $grey
+    &--active
+      color: $dark
+      font-weight: bold
+  &__link:last-child
+    margin-right: 0
+  &-grid
+    display: none
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-row-gap: 50px
+    grid-column-gap: 30px
+    padding-left: 5px
+    &--active
+      display: grid
+    &__image
+      width: 100%
+      //height: 100%
+      margin-bottom: 20px
+      object-fit: cover
+      border-radius: 8px
+    &__title
+      margin-top: 0
+      margin-bottom: 3px
+      margin-left: 10px
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+    &__wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 0 10px
+    &__price
+      font-size: 20px
+      line-height: 36px
+    &__last
+      display: flex
+      flex-direction: column
+      max-height: 350px
+      padding-top: 120px
+      background-color: #1565D8
+      border-radius: 8px
+      //background-image: url(../img/trending-image8.jpg)
+      &-title
+        margin: 0
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #ffffff
+      &-icon
+        height: 28px
+        margin-bottom: 25px

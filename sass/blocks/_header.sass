@@ -1,0 +1,64 @@
+.header
+  &__wrapper
+    display: flex
+    min-height: 100px
+    align-items: center
+  &__logo
+    margin-right: auto
+  &__navbar
+    min-width: 570px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__link
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $dark
+    &:hover
+      transition: 0.3s
+      color: #7a54cc
+  &__button
+    padding: 13px 24px
+    border: 2px solid #1565D8
+    border-radius: 8px
+    background-color: transparent
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: #1565d8
+    outline: none
+    cursor: pointer
+  &__button:hover
+    border: 2px solid #363796
+    color: #363796
+    transition: 0.2s
+  &__menu-button
+    display: none
+  &-bottom
+    display: none
+    position: fixed
+    top: 8px
+    left: 13px
+    right: 13px
+    height: auto
+    padding: 36px 24px
+    background-color: #fff
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+    &--visible
+      display: block
+    &__close
+      position: absolute
+      top: 12px
+      right: 16px
+  &__mobile-menu
+    min-height: 250px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+  &__menu-link
+    display: block
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
